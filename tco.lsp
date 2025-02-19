@@ -61,7 +61,7 @@
             ; Obté la llista d'arguments efectius a partir de la llista d'arguments
             ; formals de la funció.
             ; Si troba &optional o &rest, els ignora.
-            ; Si troba una llista (valor per defecte), es quedda amb el primer element.
+            ; Si troba una llista (valor per defecte), es queda amb el primer element.
             (extract-parameters (args)
                 (cond
                     ((null args) nil)
