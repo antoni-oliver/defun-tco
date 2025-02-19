@@ -45,3 +45,6 @@ Inspirat en [Wilfred/tco.el](https://github.com/Wilfred/tco.el).
 Així, tot i que és cert que es crida `thunk` la mateixa quantitat de vegades,
 no es van acumulant crides a la pila, ja que les crides a `thunk` es fan
 quan la crida anterior ja ha retornat.
+
+## Provat en:
+* [XLISP-PLUS](https://almy.us/xlisp.html)
