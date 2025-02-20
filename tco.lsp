@@ -67,7 +67,7 @@
                     ((null args) nil)
                     ((member (car args) '(&optional &rest)) (extract-parameters (cdr args)))
                     ((atom (car args)) (cons (car args) (extract-parameters (cdr args))))
-                    ; Noméss hauria de poder ser una llista
+                    ; Només hauria de poder ser una llista
                     (t (cons (caar args) (extract-parameters (cdr args)))))))
         (let (
                 (progbody (transform-thunk (cons 'progn body)))
