@@ -57,7 +57,7 @@
                     ((atom expr) expr)
                     ((and (listp expr) (eq (car expr) function-name))
                         (list 'lambda '() (cons 'thunk (cdr expr))))
-                    (t (mapcar #'transform expr))))
+                    (t (mapcar #'transform-thunk expr))))
             ; Obté la llista d'arguments efectius a partir de la llista d'arguments
             ; formals de la funció.
             ; Si troba &optional o &rest, els ignora.
